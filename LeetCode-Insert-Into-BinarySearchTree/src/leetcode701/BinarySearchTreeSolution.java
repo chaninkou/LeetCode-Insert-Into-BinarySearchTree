@@ -1,8 +1,14 @@
-package binarySearch;
+package leetcode701;
 
 public class BinarySearchTreeSolution {
     public TreeNode insertIntoBST(TreeNode root, int val) {
         TreeNode node = root;
+        
+        if(node == null){
+            node = new TreeNode(val);
+            return node;
+        }
+        
         while(true){
             if(val >= node.val){
                 if(node.right != null){
