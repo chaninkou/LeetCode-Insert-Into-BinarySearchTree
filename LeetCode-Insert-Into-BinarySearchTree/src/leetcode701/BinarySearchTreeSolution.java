@@ -9,7 +9,7 @@ public class BinarySearchTreeSolution {
             return node;
         }
         
-        while(true){
+        while(node != null){
             if(val >= node.val){
                 if(node.right != null){
                     node = node.right;
