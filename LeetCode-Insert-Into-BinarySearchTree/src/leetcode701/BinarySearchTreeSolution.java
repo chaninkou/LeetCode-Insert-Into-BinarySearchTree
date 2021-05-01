@@ -1,6 +1,7 @@
 package leetcode701;
 
 public class BinarySearchTreeSolution {
+	// worst case O(n) to search/insert/delete, O(h) is average where h is the height
     public TreeNode insertIntoBST(TreeNode root, int val) {
         TreeNode node = root;
         
